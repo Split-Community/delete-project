@@ -1,7 +1,9 @@
 # Split Project Cleanup Script
 
 A utility script for completely removing all resources from a Split.io project workspace.
-**NOTE: This will not work for migrated environments that are accessed from app.harness.io. You will probably want to remove the project deletion code in that case.**
+
+**NOTE: This will not work for migrated environments that are accessed from app.harness.io.** 
+You will probably want to remove the project deletion code in that case.
 
 ## Overview
 
