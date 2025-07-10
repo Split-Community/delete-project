@@ -37,11 +37,13 @@ Before running the script, configure the following parameters:
 1. `projectName`: Name of the workspace/project to delete
 2. `thisApiKey`: Your Split admin API key
 3. `environmentNameToSDKKeyMap`: Dictionary mapping environment names to their SDK keys
+4. `dryRun`: Set to `True` to run in simulation mode (prints actions without actually deleting resources)
 
 Example:
 ```python
 projectName = 'YOUR_PROJECT_NAME'
 thisApiKey = 'your-admin-api-key'
+dryRun = False  # Set to True for a dry run without actual deletions
 ```
 
 ## Usage
@@ -51,6 +53,15 @@ Simply run the script with Python:
 ```bash
 python delete_all.py
 ```
+
+### Dry Run Mode
+
+The script supports a dry run mode for safely previewing what would be deleted without actually making any changes:
+
+1. Set `dryRun = True` at the top of the script
+2. Run the script as normal
+3. Review the output to see what would be deleted
+4. When ready to proceed with actual deletion, set `dryRun = False`
 
 ## Error Handling
 
