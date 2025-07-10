@@ -86,5 +86,6 @@ for environment in environments:
     client.environments.delete(environment.id, workspace.id )
 
 # delete workspace
+# when using a migrated environment (eg accessing from app.harness.io) this will no longer be possible - you'll have to delete either using the harness api or manually
 print(f"Deleting workspace: {workspace.name}")
 client.workspaces.delete(workspace.id)
