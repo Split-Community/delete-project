@@ -13,7 +13,7 @@ environmentNameToSDKKeyMap = {
 }
 # you will have to update this when using in a migrated harness environment
 client = get_client({
-    'apikey': thisApiKey,
+    'apikey': thisApiKey, #remove this when in a migrated harness environment
     #'harness_token': 'your-harness-token',
     #'harness_mode': True
     })
