@@ -1,4 +1,4 @@
-# Split Project Cleanup Script
+# Project Cleanup Script
 
 A utility script for completely removing all resources from a Split.io project workspace.
 
@@ -7,14 +7,14 @@ You will have to delete the project itself manually from the Harness UI, but the
 
 ## Overview
 
-This script systematically deletes all resources associated with a specific workspace in Split.io, including:
+This script systematically deletes all resources associated with a specific workspace/project in FME, including:
 
 1. **Environment-level resources**:
-   - Splits
+   - Splits/Feature Flags
    - Segments (standard, rule-based, and large segments)
 
 2. **Project-level resources**:
-   - Splits
+   - Splits/Feature Flags
    - Segments (all types)
    - Traffic Types
    - Flag Sets
