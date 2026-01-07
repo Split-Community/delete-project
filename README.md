@@ -2,8 +2,9 @@
 
 A utility script for completely removing all resources from a Split.io project workspace.
 
-**NOTE: This will not work for migrated environments that are accessed from app.harness.io.** 
-You will have to delete the project itself manually from the Harness UI, but the rest of the code for deleting the components of the project will still function in that case
+**NOTE: This will not work out of the box with migrated accounts that are accessed from app.harness.io.** 
+You will have to adjust the `get_client` configuration to set `harness_mode` to true and use the `harness_token` configuration option. 
+If so, you will also have to delete the project itself manually from the Harness UI, but the rest of the code for deleting the components of the project will still function in that case
 
 ## Overview
 
